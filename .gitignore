@@ -2,3 +2,4 @@
 .vscode/*
 venv/*
 db.sql
+sandbox.ipynb
