@@ -9,7 +9,7 @@ cpf = os.getenv("cpf")
 pw = os.getenv("pw")
 
 
-class GasPriceApiClient:
+class SetRNApiClient:
     BASE_URL = "https://api.set.rn.gov.br/nfp/v1/preco-minimo"
     CLIENT_ID = "62cccea10501"
 
@@ -38,7 +38,7 @@ class GasPriceApiClient:
 
 def GetGasosa(cidade, produto):
     
-    api_client = GasPriceApiClient(cpf, pw)
+    api_client = SetRNApiClient(cpf, pw)
     
     try:
         payload = api_client.search_product(cidade, produto)
